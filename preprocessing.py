@@ -20,4 +20,5 @@ def get_data():
     scaled_train = np.concatenate((scaler.transform(train_data.iloc[:,:-3]), train_data.iloc[:,-3:].as_matrix()), axis=1)
     scaled_test = np.concatenate((scaler.transform(test_data.iloc[:,:-3]), test_data.iloc[:,-3:].as_matrix()), axis=1)
 
+    data.to_csv("data\preprocessed.csv")
     return {'train': scaled_train, 'test':test_data, 'target':target_values}
