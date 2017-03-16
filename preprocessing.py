@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 from sklearn import preprocessing
+import matplotlib.pyplot as plt
 
 def get_data():
     data = pd.read_csv('data/Case1_Data.csv')
@@ -11,6 +12,10 @@ def get_data():
     dummies = pd.get_dummies(data.iloc[:,-1])
     data = pd.concat([data.iloc[:,0:100], dummies], axis=1)
 
+    # Detect outliers wtih boxplot
+    plt.boxplot(data.iloc[:,1:].as_matrix())
+    plt.show()
+    
     # Split
     train_data = data.iloc[:99,1:]
     test_data = data.iloc[99:,1:]
