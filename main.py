@@ -106,23 +106,4 @@ The boxplot returns dictionary where one of the keys is
 Maybe we could use this to get the outliers and for example map them to max/min
 for being outlier? I don't know what would be the standard procedure and that's just
 something I came up with
-
-
-
-
-=============== Bootstraping for understanding ==================
-Haven't done anything in this regards, but looks like we've got plenty to talk about.
-
-
-
-
-=============== REPORT ==================
-=============== REPORT ==================
-=============== REPORT ==================
-
-I'm not here for the weekend so we should probably meet-up on Monday
-
-=============== REPORT ==================
-=============== REPORT ==================
-=============== REPORT ==================
 '''
